@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>皮卡丘</title>
+  </head>
+  <body>
+    <style id="demo2"></style>
+    <div id="demo"></div>
+    <div id="button">
+      <button id="btnPause">暂停</button>
+      <button id="btnPlay">播放</button>
+      <button id="btnSlow">慢速</button>
+      <button id="btnNormal">中速</button>
+      <button id="btnFast">快速</button>
+    </div>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+      #button {
+        position: fixed;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      #button > button {
+        margin-top: 10px;
+        padding: 4px 8px;
+      }
+      #demo2 {
+        display: none;
+      }
+      #demo {
+        position: fixed;
+        height: 50vh;
+        width: 100%;
+        top: 0;
+        overflow-y: auto;
+      }
+      #demo::-webkit-scrollbar {
+        display: none;
+      }
+      #html {
+        position: fixed;
+        height: 50vh;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+    <div id="html">
+      <div class="skin">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="nose">
+          <div class="yuan"></div>
+        </div>
+        <div class="face faceLeft"></div>
+        <div class="face faceRight"></div>
+        <div class="mouth">
+          <div class="up">
+            <div class="lipLeft"></div>
+            <div class="lipRight"></div>
+          </div>
+          <div class="down">
+            <div class="yuan1">
+              <div class="yuan2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./test.js"></script>
+  </body>
+</html>
